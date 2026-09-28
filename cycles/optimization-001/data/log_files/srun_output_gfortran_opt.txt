@@ -1,0 +1,215 @@
+CrayPat/X:  Version 25.03.0 Revision 5ef9ac5bb sles15.6_x86_64  01/22/25 23:08:53
+ ========================================================
+   HAM-Lite 3D Driver
+ ========================================================
+ =============================================
+ HAM-Lite 3D Configuration
+ =============================================
+ Domain selection:
+  Longitude:  101 to  164 (n=  64
+)
+  Latitude:    65 to  128 (n=  64
+)
+  Vertical levels:  137
+ 
+ Grid configuration:
+  Total cells:      4096
+  nproma:        512
+  nblocks:         8
+ 
+  Input file: ./input/HAM_box_inp_200007.01_activ-BIG.nc
+ =============================================
+ Allocating patch for 3D domain...
+ Initializing HAM-lite submodel...
+ Allocating 3D arrays...
+  Memory for   561152 grid points
+ Reading input from: ./input/HAM_box_inp_200007.01_activ-BIG.nc
+   Reading tracer modes (param1-11)...
+   Reading meteorological fields...
+   Reading surface fields from param37...
+   Input reading complete.
+ Converting mass mixing ratios to number concentrations...
+ Initializing aerosol properties...
+ ham_lite_mprops   pqm1
+min, max, mean       0.2648E-05  0.1291E-01  0.1361E-02
+ ham_lite_mprops   ptm1
+min, max, mean       0.1810E+03  0.3119E+03  0.2473E+03
+ ham_lite_mprops   papm1
+min, max, mean       0.1085E+01  0.9710E+05  0.2905E+05
+ ham_lite_mprops   zrh
+min, max, mean       0.5815E-05  0.1000E+01  0.1864E+00
+ mode   qdu 
+ mode   qss 
+ mode   qca 
+ mode   qsu 
+ 
+Starting time loop for    100 steps...
+ 
+  Time step      1 /    100
+  Time step      2 /    100
+  Time step      3 /    100
+  Time step      4 /    100
+  Time step      5 /    100
+  Time step      6 /    100
+  Time step      7 /    100
+  Time step      8 /    100
+  Time step      9 /    100
+  Time step     10 /    100
+  Time step     11 /    100
+  Time step     12 /    100
+  Time step     13 /    100
+  Time step     14 /    100
+  Time step     15 /    100
+  Time step     16 /    100
+  Time step     17 /    100
+  Time step     18 /    100
+  Time step     19 /    100
+  Time step     20 /    100
+  Time step     21 /    100
+  Time step     22 /    100
+  Time step     23 /    100
+  Time step     24 /    100
+  Time step     25 /    100
+  Time step     26 /    100
+  Time step     27 /    100
+  Time step     28 /    100
+  Time step     29 /    100
+  Time step     30 /    100
+  Time step     31 /    100
+  Time step     32 /    100
+  Time step     33 /    100
+  Time step     34 /    100
+  Time step     35 /    100
+  Time step     36 /    100
+  Time step     37 /    100
+  Time step     38 /    100
+  Time step     39 /    100
+  Time step     40 /    100
+  Time step     41 /    100
+  Time step     42 /    100
+  Time step     43 /    100
+  Time step     44 /    100
+  Time step     45 /    100
+  Time step     46 /    100
+  Time step     47 /    100
+  Time step     48 /    100
+  Time step     49 /    100
+  Time step     50 /    100
+  Time step     51 /    100
+  Time step     52 /    100
+  Time step     53 /    100
+  Time step     54 /    100
+  Time step     55 /    100
+  Time step     56 /    100
+  Time step     57 /    100
+  Time step     58 /    100
+  Time step     59 /    100
+  Time step     60 /    100
+  Time step     61 /    100
+  Time step     62 /    100
+  Time step     63 /    100
+  Time step     64 /    100
+  Time step     65 /    100
+  Time step     66 /    100
+  Time step     67 /    100
+  Time step     68 /    100
+  Time step     69 /    100
+  Time step     70 /    100
+  Time step     71 /    100
+  Time step     72 /    100
+  Time step     73 /    100
+  Time step     74 /    100
+  Time step     75 /    100
+  Time step     76 /    100
+  Time step     77 /    100
+  Time step     78 /    100
+  Time step     79 /    100
+  Time step     80 /    100
+  Time step     81 /    100
+  Time step     82 /    100
+  Time step     83 /    100
+  Time step     84 /    100
+  Time step     85 /    100
+  Time step     86 /    100
+  Time step     87 /    100
+  Time step     88 /    100
+  Time step     89 /    100
+  Time step     90 /    100
+  Time step     91 /    100
+  Time step     92 /    100
+  Time step     93 /    100
+  Time step     94 /    100
+  Time step     95 /    100
+  Time step     96 /    100
+  Time step     97 /    100
+  Time step     98 /    100
+  Time step     99 /    100
+  Time step    100 /    100
+ 
+ Simulation complete. Cleaning up...
+ HAM-Lite 3D run finished successfully!
+ ========================================================
+----------------------------------------
+initialization summary:
+  Calls        : 1
+  Total time   :     4.864358 s
+  Mean time    :     4.864358 s
+  Last duration:     4.864358 s
+----------------------------------------
+----------------------------------------
+compute loop summary:
+  Calls        : 100
+  Total time   :    37.123948 s
+  Mean time    :     0.371239 s
+  Last duration:     0.403381 s
+----------------------------------------
+----------------------------------------
+cloud microphysics summary:
+  Calls        : 800
+  Total time   :    11.644484 s
+  Mean time    :     0.014556 s
+  Last duration:     0.014506 s
+----------------------------------------
+----------------------------------------
+wet deposition summary:
+  Calls        : 800
+  Total time   :     1.035665 s
+  Mean time    :     0.001295 s
+  Last duration:     0.001318 s
+----------------------------------------
+----------------------------------------
+radiation 1 summary:
+  Calls        : 800
+  Total time   :    11.463048 s
+  Mean time    :     0.014329 s
+  Last duration:     0.014610 s
+----------------------------------------
+----------------------------------------
+radiation 2 summary:
+  Calls        : 800
+  Total time   :     0.000035 s
+  Mean time    :     0.000000 s
+  Last duration:     0.000000 s
+----------------------------------------
+----------------------------------------
+dry deposition summary:
+  Calls        : 800
+  Total time   :     1.157854 s
+  Mean time    :     0.001447 s
+  Last duration:     0.001899 s
+----------------------------------------
+----------------------------------------
+sedimentation summary:
+  Calls        : 800
+  Total time   :     3.579871 s
+  Mean time    :     0.004475 s
+  Last duration:     0.004720 s
+----------------------------------------
+----------------------------------------
+update tracers summary:
+  Calls        : 800
+  Total time   :     7.675592 s
+  Mean time    :     0.009594 s
+  Last duration:     0.008229 s
+----------------------------------------
+
