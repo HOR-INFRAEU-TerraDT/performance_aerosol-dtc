@@ -32,6 +32,9 @@ Figure 1 shows the basic HAM-Lite and HAM-M7 profiles, timed for each main subro
 As expected, HAM-Lite is about an order faster compared to HAM-M7 in similar configuration. By far the most expensive subprogram in HAM-Lite is the calculation of particle radiative
 properties.
 
-Profiling with CrayPat shows new details: about half of the radiation submodel run time is consumed by memory access processes, suggested by the calls to `memset_avx2_unaligned_erms` and related procedures handled by the compiler. This is clearly observed in Figure 2. In fact, this takes up to 20-30% of the entire model execution time. Superficial inspection of the source code reveals frequent array allocations and initializations within the radiation submodel, which are therefore a very promising opportunity for future optimizations. The CrayPAT sampling data as well as the basic model profiles are found in [](data/)
+Profiling with CrayPat shows new details: about half of the radiation submodel run time is consumed by memory access processes, suggested by the calls to `memset_avx2_unaligned_erms` and related procedures handled by the compiler. This is clearly observed in Figure 2. In fact, this takes up to 20-30% of the entire model execution time. Superficial inspection of the source code reveals frequent array allocations and initializations within the radiation submodel, which are therefore a very promising opportunity for future optimizations. The CrayPAT sampling data as well as the basic model profiles are found in [data/](data/).
 
 ![Figure 2: Profile of the radiation submodel statistics based on CrayPAT sampling experiment](figures/HAM-Lite_rad_calltree.png)
+
+Other possible opportunities to improve the HAM-Lite performance include introducing shared memory parallel structures using OpenMP. At present, no working implementations of any parallel computing strategies were present in HAM-Lite (nor in HAM-M7).
+
