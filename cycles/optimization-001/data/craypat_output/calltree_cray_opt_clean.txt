@@ -1,0 +1,512 @@
+Number of PEs (MPI ranks):    1
+                           
+Number of Nodes:              1
+                           
+Numbers of PEs per Node:      1
+                           
+Numbers of Threads per PE:    1
+                           
+Number of Cores per Socket:  64
+Table 1:  Calltree View with Callsite Line Numbers
+
+  Samp% |    Samp | Calltree
+       
+ 100.0% | 3,142.0 | Total
+|-----------------------------------------------------------------------------
+|  99.7% | 3,134.0 | __libc_start_call_main
+||----------------------------------------------------------------------------
+||  33.5% | 1,054.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.521
+|||---------------------------------------------------------------------------
+3||  20.5% |   644.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.333
+||||--------------------------------------------------------------------------
+4|||  11.5% |   361.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.333(exclusive)
+4|||   5.1% |   160.0 | __cray_EXP_V_16:__cray2_EXP_V_01wrap.S:line.73
+4|||   0.7% |    21.0 | __cray_EXP_V_16:__cray2_EXP_V_01wrap.S:line.75
+4|||   0.7% |    21.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.185
+4|||   0.3% |     8.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.305
+4|||   0.2% |     7.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.277
+4|||   0.2% |     7.0 | __cray_EXP_W_16:__cray2_EXP_W_01.S:line.143
+4|||   0.2% |     6.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.138
+4|||   0.2% |     6.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.131
+4|||   0.2% |     5.0 | _init:crtn.S
+4|||   0.2% |     5.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.206
+4|||   0.1% |     4.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.182
+4|||   0.1% |     4.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.241
+4|||   0.1% |     3.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.218
+4|||   0.1% |     3.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.97
+4|||   0.1% |     3.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.209
+4|||   0.1% |     3.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.142
+4|||   0.1% |     2.0 | __cray_EXP_V_16:__cray2_EXP_V_01wrap.S:line.67
+4|||   0.1% |     2.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.289
+4|||   0.1% |     2.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.96
+4|||   0.1% |     2.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.223
+4|||   0.1% |     2.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.153
+4|||   0.1% |     2.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.196
+4|||   0.0% |     1.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.309
+4|||   0.0% |     1.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.105
+4|||   0.0% |     1.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.173
+4|||   0.0% |     1.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.195
+4|||   0.0% |     1.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.136
+||||==========================================================================
+3||   6.4% |   202.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.326
+||||--------------------------------------------------------------------------
+4|||   0.7% |    21.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.799
+4|||   0.3% |     9.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.729
+4|||   0.2% |     7.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.326(exclusive)
+4|||   0.2% |     7.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.706
+4|||   0.2% |     7.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.723
+4|||   0.2% |     6.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.621
+4|||   0.2% |     6.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.636
+4|||   0.2% |     6.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.868
+4|||   0.2% |     6.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.712
+4|||   0.2% |     5.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.625
+4|||   0.2% |     5.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.635
+4|||   0.2% |     5.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.638
+4|||   0.2% |     5.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.896
+4|||   0.2% |     5.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.645
+4|||   0.2% |     5.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.713
+4|||   0.2% |     5.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.727
+4|||   0.1% |     4.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.589
+4|||   0.1% |     4.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.710
+4|||   0.1% |     4.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.617
+4|||   0.1% |     4.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.637
+4|||   0.1% |     4.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.779
+4|||   0.1% |     3.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.585
+4|||   0.1% |     3.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.602
+4|||   0.1% |     3.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.607
+4|||   0.1% |     3.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.624
+4|||   0.1% |     3.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.899
+4|||   0.1% |     3.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.641
+4|||   0.1% |     3.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.714
+4|||   0.1% |     3.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.591
+4|||   0.1% |     3.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.889
+4|||   0.1% |     3.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.632
+4|||   0.1% |     3.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.768
+4|||   0.1% |     3.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.611
+4|||   0.1% |     3.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.606
+4|||   0.1% |     2.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.498
+4|||   0.1% |     2.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.741
+4|||   0.1% |     2.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.605
+4|||   0.1% |     2.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.708
+4|||   0.1% |     2.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.594
+4|||   0.1% |     2.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.552
+4|||   0.1% |     2.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.756
+4|||   0.0% |     1.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.529
+4|||   0.0% |     1.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.560
+4|||   0.0% |     1.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.726
+4|||   0.0% |     1.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.838
+4|||   0.0% |     1.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.907
+4|||   0.0% |     1.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.901
+4|||   0.0% |     1.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.776
+4|||   0.0% |     1.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.612
+4|||   0.0% |     1.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.746
+4|||   0.0% |     1.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.721
+4|||   0.0% |     1.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.619
+4|||   0.0% |     1.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.647
+4|||   0.0% |     1.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.716
+4|||   0.0% |     1.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.354
+4|||   0.0% |     1.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.590
+4|||   0.0% |     1.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.433
+4|||   0.0% |     1.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.402
+4|||   0.0% |     1.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.570
+4|||   0.0% |     1.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.368
+||||==========================================================================
+3||   1.0% |    30.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.233
+||||--------------------------------------------------------------------------
+4|||   0.1% |     3.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.647
+4|||   0.1% |     3.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.608
+4|||   0.1% |     2.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.556
+4|||   0.1% |     2.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.592
+4|||   0.1% |     2.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.615
+4|||   0.1% |     2.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.705
+4|||   0.1% |     2.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.819
+4|||   0.0% |     1.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.233(exclusive)
+4|||   0.0% |     1.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.826
+4|||   0.0% |     1.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.289
+4|||   0.0% |     1.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.700
+4|||   0.0% |     1.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.658
+4|||   0.0% |     1.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.673
+4|||   0.0% |     1.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.570
+4|||   0.0% |     1.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.797
+4|||   0.0% |     1.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.559
+4|||   0.0% |     1.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.525
+4|||   0.0% |     1.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.641
+4|||   0.0% |     1.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.685
+4|||   0.0% |     1.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.654
+4|||   0.0% |     1.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.611
+||||==========================================================================
+3||   0.7% |    21.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.296
+3||   0.5% |    15.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.194
+4||        |         |  __cray_memset_ROME
+3||   0.4% |    11.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.294
+3||   0.4% |    11.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.345
+3||   0.4% |    11.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.212
+3||   0.3% |     8.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.323
+3||   0.2% |     7.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.193
+4||        |         |  __cray_memset_ROME
+3||   0.2% |     7.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.252
+3||   0.2% |     7.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.346
+3||   0.2% |     7.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.195
+4||        |         |  __cray_memset_ROME
+3||   0.2% |     6.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.521(exclusive)
+3||   0.2% |     6.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.311
+3||   0.2% |     6.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.192
+4||        |         |  __cray_memset_ROME
+3||   0.2% |     5.0 | ham_lite_act_cdnc$mo_ham_lite_act_:mo_ham_lite_act.f90:line.394
+3||   0.2% |     5.0 | ham_lite_act_cdnc$mo_ham_lite_act_:mo_ham_lite_act.f90:line.382
+4||        |         |  __cray_memset_ROME
+3||   0.1% |     4.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.179
+4||        |         |  __cray_memset_ROME
+3||   0.1% |     4.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.178
+4||        |         |  __cray_memset_ROME
+3||   0.1% |     4.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.223
+3||   0.1% |     4.0 | ham_lite_act_para$mo_ham_lite_act_:mo_ham_lite_act.f90:line.98
+3||   0.1% |     4.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.246
+3||   0.1% |     4.0 | ham_lite_act_cdnc$mo_ham_lite_act_:mo_ham_lite_act.f90:line.405
+3||   0.1% |     3.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.344
+3||   0.1% |     2.0 | ham_lite_act_cdnc$mo_ham_lite_act_:mo_ham_lite_act.f90:line.403
+3||   0.1% |     2.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.329
+3||   0.1% |     2.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.230
+3||   0.1% |     2.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.264
+3||   0.0% |     1.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.250
+3||   0.0% |     1.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.213
+3||   0.0% |     1.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.266
+3||   0.0% |     1.0 | ham_lite_act_cdnc$mo_ham_lite_act_:mo_ham_lite_act.f90:line.392
+3||   0.0% |     1.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.309
+3||   0.0% |     1.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.227
+3||   0.0% |     1.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.184
+4||        |         |  __cray_memset_ROME
+3||   0.0% |     1.0 | ham_lite_act_cdnc$mo_ham_lite_act_:mo_ham_lite_act.f90:line.383
+3||   0.0% |     1.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.330
+3||   0.0% |     1.0 | ham_lite_act_nact$mo_ham_lite_act_:mo_ham_lite_act.f90:line.237
+|||===========================================================================
+||  29.2% |   919.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.554
+|||---------------------------------------------------------------------------
+3||   4.4% |   139.0 | __cray_memset_ROME
+3||   2.7% |    86.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.698
+3||   2.3% |    73.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.677
+3||   2.1% |    65.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.673
+3||   2.1% |    65.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.675
+3||   1.9% |    60.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.680
+3||   1.8% |    57.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.701
+3||   1.4% |    43.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.628
+3||   1.0% |    31.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.728
+3||   0.9% |    27.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.652
+3||   0.8% |    26.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.682
+3||   0.8% |    26.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.702
+3||   0.8% |    24.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.718
+3||   0.7% |    23.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.676
+3||   0.7% |    22.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.713
+3||   0.7% |    22.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.629
+||||--------------------------------------------------------------------------
+4|||   0.2% |     7.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.629(exclusive)
+4|||   0.1% |     4.0 | __cray2_ALOG_W_01:__cray2_ALOG_W_01.S:line.141
+4|||   0.1% |     2.0 | __cray2_ALOG_W_01:__cray2_ALOG_W_01.S:line.202
+4|||   0.1% |     2.0 | __cray2_ALOG_W_01:__cray2_ALOG_W_01.S:line.181
+4|||   0.0% |     1.0 | __cray2_ALOG_W_01:__cray2_ALOG_W_01.S:line.126
+4|||   0.0% |     1.0 | __cray2_ALOG_W_01:__cray2_ALOG_W_01.S:line.204
+4|||   0.0% |     1.0 | __cray2_ALOG_W_01:__cray2_ALOG_W_01.S:line.122
+4|||   0.0% |     1.0 | __cray2_ALOG_W_01:__cray2_ALOG_W_01.S:line.200
+4|||   0.0% |     1.0 | __cray2_ALOG_W_01:__cray2_ALOG_W_01.S:line.100
+4|||   0.0% |     1.0 | __cray2_ALOG_W_01:__cray2_ALOG_W_01.S:line.131
+4|||   0.0% |     1.0 | __cray2_ALOG_W_01:__cray2_ALOG_W_01.S:line.208
+||||==========================================================================
+3||   0.6% |    20.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.674
+3||   0.5% |    15.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.737
+3||   0.4% |    14.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.738
+3||   0.4% |    13.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.735
+3||   0.4% |    12.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.711
+3||   0.4% |    11.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.554(exclusive)
+3||   0.4% |    11.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.679
+3||   0.3% |     8.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.681
+3||   0.2% |     6.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.709
+3||   0.2% |     6.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.736
+3||   0.1% |     3.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.694
+3||   0.1% |     3.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.715
+3||   0.1% |     3.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.727
+3||   0.1% |     2.0 | __cray_memcpy_ROME
+3||   0.0% |     1.0 | _init:crtn.S
+3||   0.0% |     1.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.710
+3||   0.0% |     1.0 | ham_lite_rad$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.663
+|||===========================================================================
+||  13.7% |   429.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.385
+|||---------------------------------------------------------------------------
+3||   5.6% |   177.0 | read_3d_input_ham_box$hamlite_driver_3d_:hamlite_driver_3d.f90:line.783
+4||        |         |  read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.781
+|||||-------------------------------------------------------------------------
+5||||   5.2% |   164.0 | nf_get_vara_double_
+5||||   0.4% |    13.0 | read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.781(exclusive)
+|||||=========================================================================
+3||   1.0% |    32.0 | read_3d_input_ham_box$hamlite_driver_3d_:hamlite_driver_3d.f90:line.767
+||||--------------------------------------------------------------------------
+4|||   0.5% |    16.0 | read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.814
+|||||-------------------------------------------------------------------------
+5||||   0.5% |    15.0 | nf_get_vara_double_
+5||||   0.0% |     1.0 | read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.814(exclusive)
+|||||=========================================================================
+4|||   0.5% |    16.0 | read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.900
+|||||-------------------------------------------------------------------------
+5||||   0.5% |    15.0 | nf_get_vara_double_
+5||||   0.0% |     1.0 | read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.900(exclusive)
+||||==========================================================================
+3||   0.5% |    17.0 | read_3d_input_ham_box$hamlite_driver_3d_:hamlite_driver_3d.f90:line.895
+||||--------------------------------------------------------------------------
+4|||   0.5% |    16.0 | read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.893
+|||||-------------------------------------------------------------------------
+5||||   0.5% |    15.0 | nf_get_vara_double_
+5||||   0.0% |     1.0 | read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.893(exclusive)
+|||||=========================================================================
+4|||   0.0% |     1.0 | distribute_3d_field$hamlite_driver_3d_:hamlite_driver_3d.f90:line.1023
+||||==========================================================================
+3||   0.5% |    16.0 | read_3d_input_ham_box$hamlite_driver_3d_:hamlite_driver_3d.f90:line.806
+4||        |         |  read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.804
+|||||-------------------------------------------------------------------------
+5||||   0.4% |    14.0 | nf_get_vara_double_
+5||||   0.1% |     2.0 | read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.804(exclusive)
+|||||=========================================================================
+3||   0.5% |    16.0 | read_3d_input_ham_box$hamlite_driver_3d_:hamlite_driver_3d.f90:line.811
+4||        |         |  read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.809
+|||||-------------------------------------------------------------------------
+5||||   0.5% |    15.0 | nf_get_vara_double_
+5||||   0.0% |     1.0 | read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.809(exclusive)
+|||||=========================================================================
+3||   0.5% |    16.0 | read_3d_input_ham_box$hamlite_driver_3d_:hamlite_driver_3d.f90:line.831
+4||        |         |  read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.829
+|||||-------------------------------------------------------------------------
+5||||   0.5% |    15.0 | nf_get_vara_double_
+5||||   0.0% |     1.0 | read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.829(exclusive)
+|||||=========================================================================
+3||   0.5% |    16.0 | read_3d_input_ham_box$hamlite_driver_3d_:hamlite_driver_3d.f90:line.836
+4||        |         |  read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.834
+|||||-------------------------------------------------------------------------
+5||||   0.5% |    15.0 | nf_get_vara_double_
+5||||   0.0% |     1.0 | read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.834(exclusive)
+|||||=========================================================================
+3||   0.5% |    16.0 | read_3d_input_ham_box$hamlite_driver_3d_:hamlite_driver_3d.f90:line.846
+4||        |         |  read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.844
+|||||-------------------------------------------------------------------------
+5||||   0.5% |    15.0 | nf_get_vara_double_
+5||||   0.0% |     1.0 | read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.844(exclusive)
+|||||=========================================================================
+3||   0.5% |    16.0 | read_3d_input_ham_box$hamlite_driver_3d_:hamlite_driver_3d.f90:line.851
+4||        |         |  read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.849
+|||||-------------------------------------------------------------------------
+5||||   0.5% |    15.0 | nf_get_vara_double_
+5||||   0.0% |     1.0 | read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.849(exclusive)
+|||||=========================================================================
+3||   0.5% |    16.0 | read_3d_input_ham_box$hamlite_driver_3d_:hamlite_driver_3d.f90:line.856
+4||        |         |  read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.854
+|||||-------------------------------------------------------------------------
+5||||   0.4% |    14.0 | nf_get_vara_double_
+5||||   0.1% |     2.0 | read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.854(exclusive)
+|||||=========================================================================
+3||   0.5% |    16.0 | read_3d_input_ham_box$hamlite_driver_3d_:hamlite_driver_3d.f90:line.861
+4||        |         |  read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.859
+|||||-------------------------------------------------------------------------
+5||||   0.5% |    15.0 | nf_get_vara_double_
+5||||   0.0% |     1.0 | read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.859(exclusive)
+|||||=========================================================================
+3||   0.5% |    16.0 | read_3d_input_ham_box$hamlite_driver_3d_:hamlite_driver_3d.f90:line.866
+4||        |         |  read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.864
+|||||-------------------------------------------------------------------------
+5||||   0.4% |    14.0 | nf_get_vara_double_
+5||||   0.1% |     2.0 | read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.864(exclusive)
+|||||=========================================================================
+3||   0.5% |    16.0 | read_3d_input_ham_box$hamlite_driver_3d_:hamlite_driver_3d.f90:line.876
+4||        |         |  read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.869
+|||||-------------------------------------------------------------------------
+5||||   0.5% |    15.0 | nf_get_vara_double_
+5||||   0.0% |     1.0 | read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.869(exclusive)
+|||||=========================================================================
+3||   0.5% |    16.0 | read_3d_input_ham_box$hamlite_driver_3d_:hamlite_driver_3d.f90:line.888
+4||        |         |  read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.881
+|||||-------------------------------------------------------------------------
+5||||   0.5% |    15.0 | nf_get_vara_double_
+5||||   0.0% |     1.0 | read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.881(exclusive)
+|||||=========================================================================
+3||   0.5% |    15.0 | read_3d_input_ham_box$hamlite_driver_3d_:hamlite_driver_3d.f90:line.841
+4||        |         |  read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.839
+|||||-------------------------------------------------------------------------
+5||||   0.4% |    14.0 | nf_get_vara_double_
+5||||   0.0% |     1.0 | read_var_nf77_4d$mo_util_netcdf77_lite_:hamlite_driver_3d.f90:line.839(exclusive)
+|||||=========================================================================
+3||   0.2% |     6.0 | read_3d_input_ham_box$hamlite_driver_3d_:hamlite_driver_3d.f90:line.795
+3||   0.0% |     1.0 | read_3d_input_ham_box$hamlite_driver_3d_:hamlite_driver_3d.f90:line.814
+4||        |         |  distribute_3d_field$hamlite_driver_3d_:hamlite_driver_3d.f90:line.1023
+3||   0.0% |     1.0 | read_3d_input_ham_box$hamlite_driver_3d_:hamlite_driver_3d.f90:line.834
+4||        |         |  distribute_3d_field$hamlite_driver_3d_:hamlite_driver_3d.f90:line.1023
+3||   0.0% |     1.0 | read_3d_input_ham_box$hamlite_driver_3d_:hamlite_driver_3d.f90:line.844
+4||        |         |  distribute_3d_field$hamlite_driver_3d_:hamlite_driver_3d.f90:line.1023
+3||   0.0% |     1.0 | read_3d_input_ham_box$hamlite_driver_3d_:hamlite_driver_3d.f90:line.849
+4||        |         |  distribute_3d_field$hamlite_driver_3d_:hamlite_driver_3d.f90:line.1023
+3||   0.0% |     1.0 | read_3d_input_ham_box$hamlite_driver_3d_:hamlite_driver_3d.f90:line.864
+4||        |         |  distribute_3d_field$hamlite_driver_3d_:hamlite_driver_3d.f90:line.1023
+3||   0.0% |     1.0 | read_3d_input_ham_box$hamlite_driver_3d_:hamlite_driver_3d.f90:line.997
+4||        |         |  __cray_memcpy_ROME
+|||===========================================================================
+||  13.1% |   411.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.625
+|||---------------------------------------------------------------------------
+3||  12.5% |   394.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.625(exclusive)
+3||   0.5% |    17.0 | __cray_memset_ROME
+|||===========================================================================
+||   2.0% |    63.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.607
+|||---------------------------------------------------------------------------
+3||   1.3% |    40.0 | sed_lite_interface$mo_hammoz_lite_sed_:mo_hammoz_lite_sed.f90:line.333
+3||   0.3% |    10.0 | sed_lite_interface$mo_hammoz_lite_sed_:mo_hammoz_lite_sed.f90:line.307
+3||   0.1% |     4.0 | sed_lite_interface$mo_hammoz_lite_sed_:mo_hammoz_lite_sed.f90:line.323
+4||        |         |  __cray_memset_ROME
+3||   0.1% |     2.0 | __cray_memset_ROME
+3||   0.1% |     2.0 | sed_lite_interface$mo_hammoz_lite_sed_:mo_hammoz_lite_sed.f90:line.324
+4||        |         |  __cray_memset_ROME
+3||   0.1% |     2.0 | sed_lite_interface$mo_hammoz_lite_sed_:mo_hammoz_lite_sed.f90:line.301
+4||        |         |  __cray_memset_ROME
+3||   0.1% |     2.0 | sed_lite_interface$mo_hammoz_lite_sed_:mo_hammoz_lite_sed.f90:line.342
+3||   0.0% |     1.0 | sed_lite_interface$mo_hammoz_lite_sed_:mo_hammoz_lite_sed.f90:line.343
+|||===========================================================================
+||   1.6% |    49.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.484
+|||---------------------------------------------------------------------------
+3||   1.2% |    39.0 | wetdep_lite_interface$mo_hammoz_lite_wetdep_:mo_hammoz_lite_wetdep.f90:line.317
+3||   0.3% |     8.0 | wetdep_lite_interface$mo_hammoz_lite_wetdep_:mo_hammoz_lite_wetdep.f90:line.301
+3||   0.1% |     2.0 | wetdep_lite_interface$mo_hammoz_lite_wetdep_:mo_hammoz_lite_wetdep.f90:line.297
+4||        |         |  __cray_memset_ROME
+|||===========================================================================
+||   1.4% |    45.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.579
+|||---------------------------------------------------------------------------
+3||   1.1% |    34.0 | interface_tmx_subm$mo_subm_interface_lite_:mo_subm_interface_lite.f90:line.625
+||||--------------------------------------------------------------------------
+4|||   1.1% |    33.0 | drydep_lite_interface$mo_hammoz_lite_drydep_:mo_hammoz_lite_drydep.f90:line.446
+|||||-------------------------------------------------------------------------
+5||||   0.4% |    13.0 | ham_lite_drydep$mo_ham_lite_drydep_:mo_ham_lite_drydep.f90:line.222
+5||||   0.3% |     8.0 | ham_lite_drydep$mo_ham_lite_drydep_:mo_ham_lite_drydep.f90:line.220
+5||||   0.1% |     4.0 | ham_lite_drydep$mo_ham_lite_drydep_:mo_ham_lite_drydep.f90:line.297
+||||||------------------------------------------------------------------------
+6|||||   0.1% |     2.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.659
+6|||||   0.0% |     1.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.826
+6|||||   0.0% |     1.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.700
+||||||========================================================================
+5||||   0.1% |     2.0 | ham_lite_drydep$mo_ham_lite_drydep_:mo_ham_lite_drydep.f90:line.280
+||||||------------------------------------------------------------------------
+6|||||   0.0% |     1.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.733
+6|||||   0.0% |     1.0 | __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.606
+||||||========================================================================
+5||||   0.1% |     2.0 | ham_lite_drydep$mo_ham_lite_drydep_:mo_ham_lite_drydep.f90:line.337
+||||||------------------------------------------------------------------------
+6|||||   0.0% |     1.0 | ham_lite_drydep$mo_ham_lite_drydep_:mo_ham_lite_drydep.f90:line.337(exclusive)
+6|||||   0.0% |     1.0 | __cray_EXP_W_16:__cray2_EXP_W_01.S:line.529
+||||||========================================================================
+5||||   0.0% |     1.0 | ham_lite_drydep$mo_ham_lite_drydep_:mo_ham_lite_drydep.f90:line.276
+6||||        |         |  __cray_RTOR_W_01:__cray_RTOR_W_01.S:line.615
+5||||   0.0% |     1.0 | ham_lite_drydep$mo_ham_lite_drydep_:mo_ham_lite_drydep.f90:line.344
+5||||   0.0% |     1.0 | ham_lite_drydep$mo_ham_lite_drydep_:mo_ham_lite_drydep.f90:line.347
+5||||   0.0% |     1.0 | ham_lite_drydep$mo_ham_lite_drydep_:mo_ham_lite_drydep.f90:line.301
+|||||=========================================================================
+4|||   0.0% |     1.0 | drydep_lite_interface$mo_hammoz_lite_drydep_:mo_hammoz_lite_drydep.f90:line.412
+||||==========================================================================
+3||   0.2% |     7.0 | interface_tmx_subm$mo_subm_interface_lite_:mo_subm_interface_lite.f90:line.563
+3||   0.1% |     2.0 | interface_tmx_subm$mo_subm_interface_lite_:mo_subm_interface_lite.f90:line.562
+3||   0.0% |     1.0 | interface_tmx_subm$mo_subm_interface_lite_:mo_subm_interface_lite.f90:line.470
+3||   0.0% |     1.0 | interface_tmx_subm$mo_subm_interface_lite_:mo_subm_interface_lite.f90:line.584
+|||===========================================================================
+||   1.2% |    37.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.1
+3|        |         |  _EXECUTE_COMMAND_LINE
+||   0.9% |    27.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.285
+3|        |         |  init_hamlite_submodel$mo_subm_interface_lite_:mo_subm_interface_lite.f90:line.65
+4|        |         |   init_subm$mo_subm_interface_lite_:mo_subm_interface_lite.f90:line.101
+|||||-------------------------------------------------------------------------
+5||||   0.6% |    19.0 | ham_lite_init$mo_ham_lite_init_:mo_ham_lite_init.f90:line.260
+6||||        |         |  ham_lite_rad_init$mo_ham_lite_rad_:mo_ham_lite_rad.f90:line.117
+|||||||-----------------------------------------------------------------------
+7||||||   0.1% |     3.0 | read_var_nf77_3d$mo_util_netcdf77_lite_:mo_ham_lite_rad.f90:line.211
+||||||||----------------------------------------------------------------------
+8|||||||   0.0% |     1.0 | nf_open_
+8|||||||   0.0% |     1.0 | nf_get_vara_double_
+8|||||||   0.0% |     1.0 | read_var_nf77_3d$mo_util_netcdf77_lite_:mo_ham_lite_rad.f90:line.211(exclusive)
+||||||||======================================================================
+7||||||   0.1% |     2.0 | read_var_nf77_3d$mo_util_netcdf77_lite_:mo_ham_lite_rad.f90:line.175
+8||||||        |         |  nf_get_vara_double_
+7||||||   0.1% |     2.0 | read_var_nf77_3d$mo_util_netcdf77_lite_:mo_ham_lite_rad.f90:line.176
+||||||||----------------------------------------------------------------------
+8|||||||   0.0% |     1.0 | nf_open_
+8|||||||   0.0% |     1.0 | nf_get_vara_double_
+||||||||======================================================================
+7||||||   0.1% |     2.0 | read_var_nf77_3d$mo_util_netcdf77_lite_:mo_ham_lite_rad.f90:line.179
+||||||||----------------------------------------------------------------------
+8|||||||   0.0% |     1.0 | nf_open_
+8|||||||   0.0% |     1.0 | nf_get_vara_double_
+||||||||======================================================================
+7||||||   0.1% |     2.0 | read_var_nf77_3d$mo_util_netcdf77_lite_:mo_ham_lite_rad.f90:line.180
+||||||||----------------------------------------------------------------------
+8|||||||   0.0% |     1.0 | nf_open_
+8|||||||   0.0% |     1.0 | nf_get_vara_double_
+||||||||======================================================================
+7||||||   0.1% |     2.0 | read_var_nf77_3d$mo_util_netcdf77_lite_:mo_ham_lite_rad.f90:line.181
+||||||||----------------------------------------------------------------------
+8|||||||   0.0% |     1.0 | nf_open_
+8|||||||   0.0% |     1.0 | nf_get_vara_double_
+||||||||======================================================================
+7||||||   0.1% |     2.0 | read_var_nf77_3d$mo_util_netcdf77_lite_:mo_ham_lite_rad.f90:line.182
+||||||||----------------------------------------------------------------------
+8|||||||   0.0% |     1.0 | nf_open_
+8|||||||   0.0% |     1.0 | nf_get_vara_double_
+||||||||======================================================================
+7||||||   0.1% |     2.0 | read_var_nf77_3d$mo_util_netcdf77_lite_:mo_ham_lite_rad.f90:line.210
+||||||||----------------------------------------------------------------------
+8|||||||   0.0% |     1.0 | nf_open_
+8|||||||   0.0% |     1.0 | nf_get_vara_double_
+||||||||======================================================================
+7||||||   0.0% |     1.0 | read_var_nf77_3d$mo_util_netcdf77_lite_:mo_ham_lite_rad.f90:line.177
+8||||||        |         |  nf_get_vara_double_
+7||||||   0.0% |     1.0 | read_var_nf77_3d$mo_util_netcdf77_lite_:mo_ham_lite_rad.f90:line.178
+8||||||        |         |  nf_get_vara_double_
+|||||||=======================================================================
+5||||   0.3% |     8.0 | ham_lite_init$mo_ham_lite_init_:mo_ham_lite_init.f90:line.257
+6||||        |         |  start_kappa$mo_ham_lite_kappa_:mo_ham_lite_kappa.f90:line.134
+7||||        |         |   read_var_nf77_4d$mo_util_netcdf77_lite_:mo_ham_lite_kappa.f90:line.206
+||||||||----------------------------------------------------------------------
+8|||||||   0.1% |     4.0 | nf_get_vara_double_
+8|||||||   0.1% |     3.0 | _RESHAPE
+8|||||||   0.0% |     1.0 | __cray_memcpy_ROME
+|||||=========================================================================
+||   0.7% |    23.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.631
+||   0.3% |     9.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.544
+||   0.3% |     9.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.597
+||   0.3% |     8.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.389
+||   0.3% |     8.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.641
+||   0.2% |     7.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.616
+||   0.2% |     5.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.658
+||   0.2% |     5.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.535
+3|        |         |  __cray_memset_ROME
+||   0.1% |     4.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.633
+||   0.1% |     3.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.646
+3|        |         |  __cray_memset_ROME
+||   0.1% |     3.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.689
+||   0.1% |     2.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.668
+||   0.1% |     2.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.655
+||   0.1% |     2.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.656
+||   0.0% |     1.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.368
+3|        |         |  __cray_memset_ROME
+||   0.0% |     1.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.409
+3|        |         |  ham_lite_mprops$mo_ham_lite_misc_:mo_ham_lite_misc.f90:line.230
+4|        |         |   __cray2_ALOG_W_01:__cray2_ALOG_W_01.S:line.202
+||   0.0% |     1.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.458
+3|        |         |  _OPEN
+||   0.0% |     1.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.669
+3|        |         |  _FWF
+||   0.0% |     1.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.690
+||   0.0% |     1.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.566
+3|        |         |  timer_stop$timer_module_:mo_timer_utility.f90:line.61
+4|        |         |   __ALLOCATE
+||   0.0% |     1.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.691
+||   0.0% |     1.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.642
+||   0.0% |     1.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.679
+||   0.0% |     1.0 | hamlite_driver_3d_:hamlite_driver_3d.f90:line.706
+3|        |         |  _CLOSE
+||============================================================================
+|   0.1% |     3.0 | __cray_RTOR_V_01:__cray_RTOR_V_01.S:line.318
+|   0.1% |     2.0 | __cray_EXP_V_16:__cray2_EXP_V_01wrap.S:line.65
+|   0.0% |     1.0 | __cray2_ALOG:rtstable.S:line.66
+|   0.0% |     1.0 | __cray2_ALOG_01:__cray2_ALOG_01.S:line.229
+|   0.0% |     1.0 | __cray_dset_detect
+|=============================================================================
+
+========================  Additional details  ========================
