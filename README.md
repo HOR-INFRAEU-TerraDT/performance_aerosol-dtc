@@ -12,7 +12,7 @@ HAM-Lite is a reduced-complexity version of the HAM-M7 aerosol module. The full 
 
 Basic description for HAM-Lite is found [here](https://gmd.copernicus.org/articles/18/3877/2025/).
 
-Analysis/optimization cycles found under [cycles/](cycles/)
+Analysis/optimization cycles found under [cycles/](cycles/):
 
 | Cycle | Subject | Platform | Headline |
 | ----- | ------- | -------- | -------- |
